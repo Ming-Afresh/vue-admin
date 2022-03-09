@@ -1,0 +1,9 @@
+.el-submenu .el-menu-item{
+    font-size: 14px;
+    padding-left: 50px !important;
+    &.is-active {background-color: rgba(245,108,108,.2) !important;}
+}
+// 修改一级菜单样式
+.el-submenu {
+    &.is-active.is-opened .el-submenu__title{background-color: $mainColor !important}
+}

@@ -4,8 +4,16 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    isCollapse: false,
+  },
+  getters: { //computed
+    isCollapse: state => state.isCollapse
+  },
+  mutations: {
+    SET_COLLAPSE(state) {
+      state.isCollapse = !state.isCollapse
+    },
+  },
   actions: {},
-  modules: {},
 });
